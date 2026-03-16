@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="ca" dir="ltr" xml:lang="ca" class="theme-light mobile-theme-light modul-">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Política de privacitat - Eulalia Vila Ruiz
+        </title>
+
+        <style>
+            html {
+                --cookienator-primary-color: #000000;
+                --cookienator-primary-color-dimmed: #dddddd;
+            }
+        </style>
+        <script>
+            window.CookienatorSettings = {
+                thirdParties: true,
+                placeholder: true,
+                cookiesPolicyUrl: '/ca/politica-de-cookies',
+                whiteList: [/^data:image\/svg\+xml/, /^blob:/, /^data:/, /gestionaweb\.cat/, /recaptcha/, /recaptcha\.net/, /vz-49f9ecdf-f80\.b-cdn\.net/],
+                forceRefreshOnAccept: false,
+                providers : ["google-analytics.com"]
+                            };
+        </script>
+        <script>!function(e){"function"==typeof define&&define.amd?define(e):e()}((function(){"use strict";var e=function(){return e=Object.assign||function(e){for(var t,n=1,o=arguments.length;n<o;n++)for(var i in t=arguments[n])Object.prototype.hasOwnProperty.call(t,i)&&(e[i]=t[i]);return e},e.apply(this,arguments)};"function"==typeof SuppressedError&&SuppressedError;var t,n=(t=document.createElement("a"),function(e){return t.href=e,location.hostname===t.hostname}),o=(document.createElement("a"),function(e){return/^chrome-extension:/i.test(e)}),i=function(e,t){return(e=e.toString())&&!n(e)&&!o(e)&&-1===e.indexOf("cookienator")&&!t.some((function(t){return t.test(e)}))};var r,s=function(){function e(){}return e.show=function(e){this.container||(this.container=document.createElement("div"),Object.assign(this.container.style,{position:"fixed",right:"32px",bottom:"32px",backgroundColor:"var(--cookienator-dialog-background-color, #fff)",color:"var(--cookienator-color, #444)",padding:"32px",borderRadius:"6px",fontSize:"16px",boxShadow:"0 4px 10px rgba(0,0,0,.3)",zIndex:"9999",whiteSpace:"pre-line"}),document.body.appendChild(this.container));var t=document.createElement("div");t.textContent=e,this.container.appendChild(t)},e.clear=function(){var e;null===(e=this.container)||void 0===e||e.remove(),this.container=null},e.container=null,e}(),a=function(e,t){var n;null===(n=t.parentNode)||void 0===n||n.insertBefore(e,t.nextSibling)};function c(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var o in n)e[o]=n[o]}return e}!function(e){e.UpdateConfiguration="cookienator:update-configuration",e.ShowConfigurator="cookienator:show-configurator",e.UnblockAllSuccess="cookienator:unblock-all-success"}(r||(r={}));var d=function e(t,n){function o(e,o,i){if("undefined"!=typeof document){"number"==typeof(i=c({},n,i)).expires&&(i.expires=new Date(Date.now()+864e5*i.expires)),i.expires&&(i.expires=i.expires.toUTCString()),e=encodeURIComponent(e).replace(/%(2[346B]|5E|60|7C)/g,decodeURIComponent).replace(/[()]/g,escape);var r="";for(var s in i)i[s]&&(r+="; "+s,!0!==i[s]&&(r+="="+i[s].split(";")[0]));return document.cookie=e+"="+t.write(o,e)+r}}return Object.create({set:o,get:function(e){if("undefined"!=typeof document&&(!arguments.length||e)){for(var n=document.cookie?document.cookie.split("; "):[],o={},i=0;i<n.length;i++){var r=n[i].split("="),s=r.slice(1).join("=");try{var a=decodeURIComponent(r[0]);if(o[a]=t.read(s,a),e===a)break}catch(e){}}return e?o[e]:o}},remove:function(e,t){o(e,"",c({},t,{expires:-1}))},withAttributes:function(t){return e(this.converter,c({},this.attributes,t))},withConverter:function(t){return e(c({},this.converter,t),this.attributes)}},{attributes:{value:Object.freeze(n)},converter:{value:Object.freeze(t)}})}({read:function(e){return'"'===e[0]&&(e=e.slice(1,-1)),e.replace(/(%[\dA-F]{2})+/gi,decodeURIComponent)},write:function(e){return encodeURIComponent(e).replace(/%(2[346BF]|3[AC-F]|40|5[BDE]|60|7[BCD])/g,decodeURIComponent)}},{path:"/"}),u=new(function(){function e(){var t=d.get(e.COOKIE_NAME),n=t?JSON.parse(t):void 0;this.configured=void 0!==n,this.measurement=!!(null==n?void 0:n.measurement),this.advertising=!!(null==n?void 0:n.advertising)}return e.prototype.isConfigured=function(){return this.configured},e.prototype.isMeasurement=function(){return this.measurement},e.prototype.isAdvertising=function(){return this.advertising},e.prototype.setAccepted=function(t,n){d.set(e.COOKIE_NAME,JSON.stringify({measurement:t,advertising:n}),{expires:365,sameSite:"Lax",secure:!1}),this.measurement=t,this.advertising=n,this.configured=!0},e.COOKIE_NAME="cookienator-consent-v3",e}()),l=function(){function e(e){var t=document.documentElement.getAttribute("lang");if(!t){var n=location.hostname.split(".");2===n[0].length&&(t=n[0])}t||(t=function(){var e=window.navigator;if(e.languages)for(var t=0,n=e.languages;t<n.length;t++)if((r=n[t]).length>=2)return r.substr(0,2);for(var o=0,i=["language","browserLanguage","systemLanguage","userLanguage"];o<i.length;o++){var r;if((r=e[i[o]])&&r.length>=2)return r.substr(0,2)}return null}()),this.catalog=t&&t in e?e[t]:e.en}return e.prototype.trans=function(e,t){var n=e in this.catalog?this.catalog[e]:e;return t&&Object.getOwnPropertyNames(t).forEach((function(e){n=n.replace(e,t[e])})),n},e}(),p={en:{"placeholder.btn":"Cookie Settings","placeholder.text":"An element has been blocked because of your cookie settings. To see it, please accept cookies."},ca:{"placeholder.btn":"Configura cookies","placeholder.text":"S'ha bloquejat un element per la teva configuració de cookies. Cal acceptar les cookies per veure'l."},es:{"placeholder.btn":"Configurar cookies","placeholder.text":"Se ha bloqueado un elemento por tu configuración de cookies. Es necesario aceptar las cookies para verlo."},gl:{"placeholder.btn":"Configurar cookies","placeholder.text":"Bloqueouse un elemento pola túa configuración de cookies. É necesario aceptar as cookies para velo."}},h={forbiddenTags:["script","iframe","embed","img","video","audio","source","track","input"],placeholderTags:["iframe","embed","img","video","audio"],scriptTypeAttribute:"javascript/blocked",blockedSrcAttribute:"data-blocked-src",placeholder:!1,whiteList:[/jquery(?:-ui|-[0-9.]+)(?:\.min)?\.js$/],providers:[],forceRefreshOnAccept:!1,unknownProvidersEndpoint:"",debugMode:!1},f=function(){function t(t){var n,o,i,r=this;this.nativeCreateElement=document.createElement.bind(document),this.fragment=document.createDocumentFragment(),this.blockedElements=new Map,this.isActive=!1,this.unknownProviders=[],this.sendedUnknownProviders=[],this.isWindowLoaded=!1,this.settings=e(e({},h),t||{}),this.translator=new l(p),this.debouncedSendUnknowProviders=(n=function(){return r.sendUnknownProviders()},o=800,function(){for(var e=[],t=0;t<arguments.length;t++)e[t]=arguments[t];clearTimeout(i),i=setTimeout((function(){return n.apply(void 0,e)}),o)})}return t.prototype.init=function(){!this.settings.debugMode&&u.isMeasurement()||(this.activate(),this.setupListeners())},t.prototype.activate=function(){this.isActive=!0,this.monkeyPatchCreateElement(),this.setupMutationObserver(),this.monkeyPatchAjax()},t.prototype.deactivate=function(){var e,t=this;this.isActive=!1,this.settings.forceRefreshOnAccept?window.location.reload():(null===(e=this.observer)||void 0===e||e.disconnect(),document.createElement=this.nativeCreateElement,this.blockedElements.forEach((function(e,n){e.placeholder&&(a(e.element,e.placeholder),e.placeholder.remove()),"SCRIPT"===e.element.tagName&&t.settings.scriptTypeAttribute===e.element.getAttribute("type")&&e.element.setAttribute("type","application/javascript");var o=e.element.getAttribute(t.settings.blockedSrcAttribute);o&&e.element.setAttribute("src",o),e.element.removeAttribute(t.settings.blockedSrcAttribute),t.blockedElements.delete(n)})),document.dispatchEvent(new Event(r.UnblockAllSuccess)))},t.prototype.monkeyPatchAjax=function(){var e=this,t=window.fetch;t&&(window.fetch=function(n,o){var r="string"==typeof n?n:n.url;return e.addUnknowUrls(r),!u.isMeasurement()&&i(r,e.settings.whiteList)?new Promise((function(){})):t.apply(this,[n,o])});var n=XMLHttpRequest.prototype.open;XMLHttpRequest.prototype.open=function(t,o){return e.addUnknowUrls(o),!u.isMeasurement()&&i(o,e.settings.whiteList)&&(this.send=function(){}),n.apply(this,arguments)};var o=navigator.sendBeacon;o&&(navigator.sendBeacon=function(t,n){return e.addUnknowUrls(t),!(!u.isMeasurement()&&i(t,e.settings.whiteList))&&o.apply(this,[t,n])})},t.prototype.monkeyPatchCreateElement=function(){var t=this,n=this;document.createElement=function(o,r){var s=t.nativeCreateElement(o,r);if(!t.isTagForbidden(s.tagName))return s;var a=s.setAttribute.bind(s);try{var c=Object.getOwnPropertyDescriptor(Object.getPrototypeOf(s),"src");Object.defineProperties(s,{src:e(e({},c),{set:function(e){if(n.addUnknowUrls(e),u.isMeasurement()||!i(e,n.settings.whiteList))return a("src",e);a(n.settings.blockedSrcAttribute,e),s.removeAttribute("src"),n.addBlockedElement(s)}})}),s.setAttribute=function(e,t){"src"===e?s[e]=t:a(e,t)}}catch(e){}return s}},t.prototype.nodeHasValidSrc=function(e){return e instanceof HTMLElement&&e.hasAttribute("src")&&null!==e.getAttribute("src")},t.prototype.setupMutationObserver=function(){var e=this,t=this;this.observer=new MutationObserver((function(n){Array.prototype.forEach.call(n,(function(n){Array.prototype.forEach.call(n.addedNodes,(function(n){n instanceof HTMLElement&&(t.hasForbiddenClass(n)||e.isForbidden(n)&&n.hasAttribute("src")&&null!==n.getAttribute("src"))&&e.blockElementLoad(n)})),n.attributeName&&e.blockElementLoad(n.target)}))})),this.observer.observe(document.documentElement,{childList:!0,subtree:!0,attributes:!0,attributeFilter:["src"]})},t.prototype.setupListeners=function(){var e=this;document.addEventListener(r.UpdateConfiguration,(function(t){u.setAccepted(t.detail.measurement,t.detail.advertising),e.isActive&&u.isMeasurement()?e.deactivate():e.isActive||u.isMeasurement()||e.activate()})),this.settings.unknownProvidersEndpoint&&window.addEventListener("load",(function(){e.debouncedSendUnknowProviders(),e.isWindowLoaded=!0}))},t.prototype.isTagForbidden=function(e){return-1!==this.settings.forbiddenTags.indexOf(e.toLowerCase())},t.prototype.hasForbiddenClass=function(e){return e.classList.contains("cookienator-blocked")},t.prototype.isForbidden=function(e){return this.isTagForbidden(e.tagName)||this.hasForbiddenClass(e)},t.prototype.blockElementLoad=function(e){var t=this,n=e.getAttribute("src");if(u.isMeasurement())return null!==n&&this.addUnknowUrls(n),!0;if(!this.isBlocked(e)&&null!==n){if(u.isMeasurement()||!i(n,this.settings.whiteList)&&!this.hasForbiddenClass(e))return;switch(e.tagName){case"SCRIPT":e.setAttribute("type",this.settings.scriptTypeAttribute);var o=function(n){e.getAttribute("type")===t.settings.scriptTypeAttribute&&n.preventDefault(),e.removeEventListener("beforescriptexecute",o)};e.addEventListener("beforescriptexecute",o);break;case"IFRAME":var r=e;if(null!==r.contentWindow)try{r.contentWindow.stop()}catch(e){try{r.contentWindow.document.execCommand("Stop")}catch(e){}}}e.setAttribute(this.settings.blockedSrcAttribute,n),e.removeAttribute("src")}this.addBlockedElement(e,!0)},t.prototype.addBlockedElement=function(e,t){var n;void 0===t&&(t=!1),this.isBlocked(e)&&(n=this.blockedElements.get(e)),n||(n={element:e}),t&&!n.placeholder&&(n.placeholder=this.createPlaceholder(e),a(n.placeholder,e),this.fragment.appendChild(e)),this.blockedElements.set(e,n)},t.prototype.isBlocked=function(e){return this.blockedElements.has(e)},t.prototype.addUnknowUrls=function(e){try{var t=new URL(e);if(["http:","https:"].includes(t.protocol)&&!this.unknownProviders.includes(t.hostname))this.settings.providers.some((function(e){return t.hostname===e||t.hostname.endsWith("."+e)}))||(this.unknownProviders.push(t.hostname),this.isWindowLoaded&&this.debouncedSendUnknowProviders())}catch(e){}},t.prototype.sendUnknownProviders=function(){var e,t=this;if(this.settings.debugMode){if(!this.unknownProviders.length||!this.settings.unknownProvidersEndpoint)return!1;var n=this.unknownProviders.filter((function(e){return!t.sendedUnknownProviders.includes(e)}));s.show(n.join("\n"));var o={providers:n};if("navigator"in window&&navigator.sendBeacon)navigator.sendBeacon(this.settings.unknownProvidersEndpoint,JSON.stringify(o));else{var i=new XMLHttpRequest;i.open("POST",this.settings.unknownProvidersEndpoint,!0),i.withCredentials=!1,i.setRequestHeader("Content-Type","text/plain;charset=UTF-8"),i.send(JSON.stringify(o))}(e=this.sendedUnknownProviders).push.apply(e,n)}},t.prototype.createPlaceholder=function(e){var t;if(this.settings.placeholder&&(this.settings.placeholderTags.includes(e.tagName.toLowerCase())||this.hasForbiddenClass(e))){var n=document.createElement("div"),o=getComputedStyle(e),i=o.display.indexOf("inline")>-1?"inline-block":"block",s=Math.max(280,parseInt(o.width,10)),a=Math.max(140,parseInt(o.height,10));n.innerHTML='<div class="cookienator-placeholder" style="display:'+i+";width:"+s+"px;height:"+a+'px;"><div class="cookienator-placeholder-inner"><p class="cookienator-placeholder-text">'+this.translator.trans("placeholder.text")+'                 </p><button type="button" class="cookienator-placeholder-button">'+this.translator.trans("placeholder.btn")+"</button></div></div>";var c=n.children.item(0);return null===(t=c.querySelector("button"))||void 0===t||t.addEventListener("click",(function(e){document.dispatchEvent(new Event(r.ShowConfigurator))})),c}return document.createComment(e.tagName+": "+(e.getAttribute(this.settings.blockedSrcAttribute)||"no-src"))},t}(),m=[],g=[];!function(e,t){if(e&&"undefined"!=typeof document){var n,o=!0===t.prepend?"prepend":"append",i=!0===t.singleTag,r="string"==typeof t.container?document.querySelector(t.container):document.getElementsByTagName("head")[0];if(i){var s=m.indexOf(r);-1===s&&(s=m.push(r)-1,g[s]={}),n=g[s]&&g[s][o]?g[s][o]:g[s][o]=a()}else n=a();65279===e.charCodeAt(0)&&(e=e.substring(1)),n.styleSheet?n.styleSheet.cssText+=e:n.appendChild(document.createTextNode(e))}function a(){var e=document.createElement("style");if(e.setAttribute("type","text/css"),t.attributes)for(var n=Object.keys(t.attributes),i=0;i<n.length;i++)e.setAttribute(n[i],t.attributes[n[i]]);var s="prepend"===o?"afterbegin":"beforeend";return r.insertAdjacentElement(s,e),e}}(".cookienator-placeholder{box-sizing:border-box;color:#444;color:var(--cookies-color,#444);font-family:Arial,Helvetica,sans-serif;font-family:var(--cookies-font-family,Arial,Helvetica,sans-serif);font-size:14px;font-size:var(--cookies-font-size,14px);max-width:100%}.cookienator-placeholder-inner{-ms-flex-align:center;-ms-flex-pack:center;align-items:center;background-color:#f0f0f0;background-color:var(--cookies-placeholder-bg-color,#f0f0f0);box-sizing:border-box;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;height:100%;justify-content:center;padding:2em;width:100%}.cookienator-placeholder-text{line-height:1.3;margin:0;text-align:center}.cookienator-placeholder-button{-ms-flex-align:center;-ms-flex-pack:center;align-items:center;background-color:transparent;border:1.5px solid;border-radius:3px;cursor:pointer;display:-ms-inline-flexbox;display:inline-flex;font-family:inherit;font-size:inherit;font-weight:600;height:2.5em;justify-content:center;line-height:2.5rem;margin:2em 0 0;opacity:.6;padding:0 2em;transition:opacity .2s ease}.cookienator-placeholder-button:hover{opacity:1}",{}),new f(window.CookienatorSettings||{}).init()}));</script>
+
+                            <meta name="robots" content="noindex">
+        
+                                            <link rel="shortcut icon" href="https://docs.gestionaweb.cat/4075/frame-11.ico">
+                
+                                                                                <link rel="alternate" hreflang="x-default" href="index.html">
+                                        <link rel="alternate" hreflang="ca" href="index.html">
+                                                                                    <link rel="alternate" hreflang="es" href="../../es/politica-de-privacidad/index.html">
+                                    
+                    <link rel="canonical" href="index.html">
+        
+                
+                <link rel="stylesheet" href="../main-v2.min.css%3Fv=1773303404.css">
+
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        
+                <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.eulaliavila.cat/ca/politica-de-privacitat/">
+        <meta property="og:site_name" content="Eulalia Vila Ruiz">
+        <meta property="og:title" content="Política de privacitat - Eulalia Vila Ruiz">
+                                
+        
+                    
+            <meta property="og:image" content="https://images.gestionaweb.cat/4075/imgf-1200-630/blanc.png">
+            <link rel="image_src" href="https://images.gestionaweb.cat/4075/imgf-1200-630/blanc.png">
+        
+        
+                
+                
+                                <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied'
+        });
+
+        function updateConsent(measurement, advertising) {
+            const managementStatus = measurement ? 'granted' : 'denied';
+            const advertisingStatus = advertising ? 'granted' : 'denied';
+
+            gtag('consent', 'update', {
+                'ad_user_data': managementStatus,
+                'analytics_storage': managementStatus,
+                'ad_personalization': advertisingStatus,
+                'ad_storage': advertisingStatus
+            });
+        }
+
+        document.addEventListener('cookienator:update-configuration', function (e) {
+            console.log("Update consent mode", e);
+            updateConsent(e.detail.measurement, e.detail.advertising);
+        });
+    </script>
+
+
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=G-SFP9431BG3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-SFP9431BG3', {
+            debug_mode: false,
+            transport_type: 'beacon',
+            groups: ['analytics'],
+            send_page_view: true,
+            anonymize_ip: true,
+            currency: 'EUR'
+        });
+    </script>
+
+            
+            
+            
+            
+                    
+        
+                <style>
+
+.header-mobile .logo img, .header-desktop .logo img {max-height: 80px;}
+.item .txt p {margin: 0;}
+
+#s35999 .container, #b104011 .item{display: flex; align-items: center;}
+
+#b104002 .lang ul li{background-color: #222;}
+#b103995{position: absolute; top: 0; z-index: 1;}
+#b103995 span{font-weight: 500; font-size: 50px;}
+#b103997{position: absolute; bottom: 0; z-index: 1;}
+#b104011 .item-title, #b104019 .item-title, #b104023 .item-title{padding-left: 1rem; border-left: 3px solid #96E1D0;}
+#b104014 .item-title{padding-left: 1rem; border-left: 3px solid #222;}
+#b104016 .swiper-slide{flex-direction: column-reverse;}
+#b104016 .slide-generic .swiper-image{border-radius: 50%;}
+#b104021 .txt:hover{opacity: 0;}
+#b104024 .padded-inner{padding: 0;}
+
+
+/*Mòbil*/
+@media (max-width: 639px) {
+#b104011 .item{flex-direction: column-reverse;}
+#b103995 span{font-size: 30px;}
+#b103997 .btn{display: none;}
+}
+
+/*Tablet vertical*/
+@media only screen and (min-width: 640px) and (max-width: 1023px) {
+#b103995 span{font-size: 35px;}
+}
+
+/*Tablet horitzontal*/
+@media all and (device-width: 1024px) and (device-height: 768px) {
+#s35999, #b103997, #b104011 .txt, #s36002, #s36003, #s36005, #s36006{padding-left: 2rem; padding-right: 2rem;}
+#b103995 .txt{padding-left: 2rem;}
+#b103999, #b104001 {padding: 1em;}
+#b103999 a, #b104001 a, #b104002 a, #b104002 .handler{font-size: 12px;}
+#b103995 span{font-size: 35px;}
+#b103995 .item-title, #b104011 .item-title, #b104014 .item-title, #b104019 .item-title, #b104023 .item-title{font-size: 25px;}
+#b104011 .imgfit-custom{padding-bottom: 30rem;}
+#b104016 .swiper-caption-title{font-size: 18px;}
+}
+
+/*Macbook Air*/
+@media screen 
+	and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) { 
+
+}
+
+</style>    </head>
+
+    <body id="apt192625">
+                
+        <main class="offcanvas-wrapper">
+            <header class="offcanvas-header">
+                
+    <div class="offcanvas-header-logo">
+                    <a href="../../index.html">
+                                
+                
+            
+        
+                                
+    
+            
+                                    <img
+        loading="lazy"
+                src="https://images.gestionaweb.cat/4075/pqimg-240-240/blanc.png"
+        srcset="https://images.gestionaweb.cat/4075/pqimg-240-240/blanc.png 240w"
+                    sizes="240px"
+                alt="Eulalia&#x20;Vila&#x20;Ruiz"
+    >
+
+            </a>
+            </div>
+<div class="offcanvas-header-links">
+            <ul class="offcanvas-header-icon-list">
+                                                <li>
+                        <a
+                            class="offcanvas-header-icon"
+                            href="tel:623196162"
+                            title="Telèfon de Eulàlia Vila - Osteopatia"
+                        >
+                            <span class="fc fc-phone-call-o"></span>
+                                                            <span class="sr-only">Telèfon de Eulàlia Vila - Osteopatia</span>
+                                                    </a>
+                    </li>
+                                                                                    <li>
+                        <a
+                            class="offcanvas-header-icon"
+                            href="https://www.google.com/maps/dir/?api=1&destination=41.630167,2.168288"
+                            target="_blank"
+                            title="Localització de Eulàlia Vila - Osteopatia"
+                        >
+                            <span class="fc fc-map-marker-o"></span>
+                                                            <span class="sr-only">Localització de Eulàlia Vila - Osteopatia</span>
+                                                    </a>
+                    </li>
+                                                            </ul>
+    </div>
+<div class="offcanvas-header-menu-toggle" data-offcanvas-toggle="menu-mobil">
+    <div class="offcanvas-header-menu-toggle-inner"></div>
+</div>
+            </header>
+            <aside class="offcanvas position-right" data-offcanvas="menu-mobil">
+                
+
+
+<div class="mobile-drawer">
+            <div class="mobile-lang">
+            <ul class="mobile-menu">
+                <li>
+                    <div class="mobile-lang-btn">
+                        <span class="mobile-menu-icon-left fc fc-globe-o"></span>
+                                                                                    Català
+                                                                                                                                <span class="mobile-menu-toggle fc fc-angle-up"></span>
+                    </div>
+                    <ul class="mobile-lang-list">
+                                                    <li>
+                                <a
+                                    class="mobile-menu-item active"
+                                    hreflang="ca"
+                                    href="index.html"
+                                                                    >Català</a>
+                            </li>
+                                                    <li>
+                                <a
+                                    class="mobile-menu-item "
+                                    hreflang="es"
+                                    href="../../es/politica-de-privacidad/index.html"
+                                                                            lang="es"
+                                                                    >Español</a>
+                            </li>
+                                            </ul>
+                </li>
+            </ul>
+        </div>
+    
+    <nav class="mobile-nav">
+        
+                    <ul class="mobile-menu mobile-menu-main">
+                    
+    
+                                    
+            
+            
+            <li class="" data-menu-toggle>
+                <a
+                    href="../qui-som/index.html"
+                                        class="mobile-menu-item "
+                >
+                                        Qui som
+                                    </a>
+                            </li>
+                                
+            
+            
+            <li class="" data-menu-toggle>
+                <a
+                    href="../especialitats/index.html"
+                                        class="mobile-menu-item "
+                >
+                                        Especialitats
+                                    </a>
+                            </li>
+                                
+            
+            
+            <li class="" data-menu-toggle>
+                <a
+                    href="../equip/index.html"
+                                        class="mobile-menu-item "
+                >
+                                        Equip
+                                    </a>
+                            </li>
+                                
+            
+            
+            <li class="" data-menu-toggle>
+                <a
+                    href="../contacte/index.html"
+                                        class="mobile-menu-item "
+                >
+                                        Contacte
+                                    </a>
+                            </li>
+            
+            </ul>
+                            <ul class="mobile-menu mobile-menu-secondary">
+                    
+    
+                                    
+            
+            
+            <li class="" data-menu-toggle>
+                <a
+                    href="../avis-legal/index.html"
+                                        class="mobile-menu-item "
+                >
+                                        Avís legal
+                                    </a>
+                            </li>
+                                
+            
+                            
+                            
+            <li class="" data-menu-toggle>
+                <a
+                    href="index.html"
+                                        class="mobile-menu-item active"
+                >
+                                        Política de privacitat
+                                    </a>
+                            </li>
+                                
+            
+            
+            <li class="" data-menu-toggle>
+                <a
+                    href="../politica-de-cookies/index.html"
+                                        class="mobile-menu-item "
+                >
+                                        Política de cookies
+                                    </a>
+                            </li>
+                                
+            
+            
+            <li class="" data-menu-toggle>
+                <a
+                    href="javascript:document.dispatchEvent(new Event('cookienator:show-configurator'));"
+                                        class="mobile-menu-item "
+                >
+                                        Configuració de cookies
+                                    </a>
+                            </li>
+                                
+            
+            
+            <li class="" data-menu-toggle>
+                <a
+                    href="../accessibilitat/index.html"
+                                        class="mobile-menu-item "
+                >
+                                        Accessibilitat
+                                    </a>
+                            </li>
+                                
+            
+            
+            <li class="" data-menu-toggle>
+                <a
+                    href="../mapa-web/index.html"
+                                        class="mobile-menu-item "
+                >
+                                        Mapa web
+                                    </a>
+                            </li>
+            
+            </ul>
+                                    <ul class="mobile-social">
+                                    <li>
+                        <a
+                            href="https://www.instagram.com/osteo.eulaliavila/"
+                            rel="nofollow"
+                            target="_blank"
+                            class="fab fa-instagram"
+                            title="Instagram"
+                        >
+                            <span class="sr-only">Instagram Eulalia&#x20;Vila&#x20;Ruiz</span>
+                        </a>
+                    </li>
+                            </ul>
+            </nav>
+</div>
+            </aside>
+            <section class="offcanvas-content h100" data-offcanvas-content="menu-mobil">
+                <div
+    id="header"
+    class="clearfix"
+            data-fixed="true"
+        data-fixed-over="false"
+        data-fixed-opacity="0"
+    >
+    
+            <div class="header-desktop">
+                                                <div id="s35999">
+                        <div class="container clearfix">
+                                        <div
+    id="b105463"
+    class="grid-1  s-grid-12 social social--normal"
+    style="
+        --color: #fff;
+                --color-hover: rgba(255,255,255,0.7);
+    "
+>
+    
+            <ul>
+                            <li class="social-item">
+                    <a
+                        rel="nofollow"
+                        target="_blank"
+                        href="https://www.instagram.com/osteo.eulaliavila/"
+                        title="Instagram"
+                    >
+                        <span class="social-item-icon fab fa-instagram"></span>
+                                                    <span class="sr-only">Instagram Eulalia&#x20;Vila&#x20;Ruiz</span>
+                                            </a>
+                </li>
+                    </ul>
+    </div>
+
+                <div id="b103999" class="menu grid-4  m-hidden s-hidden">
+                            <ul class="sf-menu">
+        <li >
+                <a
+                    href="../qui-som/index.html"
+                                    >
+                                        Qui som
+                                    </a>
+                            </li>
+        <li >
+                <a
+                    href="../especialitats/index.html"
+                                    >
+                                        Especialitats
+                                    </a>
+                            </li>
+            </ul>
+    </div>
+
+                
+<div
+    id="b104000"
+    class="logo grid-2  m-center s-center s-grid-12"
+>
+                        <a href='../../index.html' title="Eulalia&#x20;Vila&#x20;Ruiz">
+                <img
+                    src="https://images.gestionaweb.cat/4075/pqimg-640-640/blanc.png"
+                                            alt="Eulalia&#x20;Vila&#x20;Ruiz"
+                                    >
+            </a>
+            </div>
+
+                <div id="b104001" class="menu grid-4  m-hidden s-hidden">
+                            <ul class="sf-menu">
+        <li >
+                <a
+                    href="../equip/index.html"
+                                    >
+                                        Equip
+                                    </a>
+                            </li>
+        <li >
+                <a
+                    href="../contacte/index.html"
+                                    >
+                                        Contacte
+                                    </a>
+                            </li>
+            </ul>
+    </div>
+
+                    <div id="b104002" class="grid-1  m-hidden s-hidden">
+                    <ul
+                data-model="nom_short"
+                data-display="select"
+                class="lang select lang-text"
+            >
+                <li>
+                    <div
+                        class="handler"
+                    >
+                                                                                                                        <span class="lang-item-text">CA</span>
+                                                                                                                                                                <span class="fa fa-angle-down"></span>
+                    </div>
+                    <ul>
+                                                                                                                                        <li class="">
+                                    <a
+                                                                                    lang="es"
+                                                                                hreflang="es"
+                                        href="../../es/politica-de-privacidad/index.html"
+                                        title="Español"
+                                    >
+                                                                                    <span class="lang-item-text">ES</span>
+                                                                            </a>
+                                </li>
+                                                                        </ul>
+                </li>
+            </ul>
+            </div>
+
+                            </div>
+                    </div>
+                                    </div>
+    </div>
+                
+    <div id="main">
+        
+        <div class="contingut clearfix content--spacing">
+                                            <div class="container clearfix">
+                                            </div>
+            
+                <div class="container">
+                        
+
+    <div class="generic" data-view="3">
+        
+        <div class="grid-12 m-grid-12 s-grid-12 generic3">
+
+                            <div class="padded-inner-sides grid-12 ">
+                                                                        <h1 class="">Política de privacitat</h1>
+                                                                                </div>
+            
+            <div class="padded-inner-sides grid-12">
+                                    <div class="text content-block">
+                        <div class='avislegal'><p>
+	EL TITULAR es compromet a protegir la privacitat dels usuaris que accedeixin a aquest web i/o qualsevol dels seus serveis. La utilització del web 
+    i/o de qualsevol dels serveis oferts per EL TITULAR, implica l'acceptació per part de l''usuari de les disposicions contingudes en la present 
+    Política de Privacitat i que les seves dades personals siguin tractades segons s'hi estipula. Si us plau, tingui en compte que tot i que hi pugui 
+    haver enllaços del nostre web a d'altres webs, aquesta Política de Privacitat no s'aplica als webs d'altres companyies o organitzacions a les 
+    quals el web estigui redirigit. EL TITULAR no controla el contingut dels webs de tercers ni accepta cap tipus de responsabilitat pel contingut o 
+    les polítiques de privacitat d'aquests webs.
+</p>
+
+<h2 class="title3 titol text-uppercase">Informació sobre el tractament de dades (Reglament (UE) 2016/679 i LO 3/2018)</h2>
+<ul>
+    <li>
+        <span class="text-bold">Responsable del tractament:</span>
+        EL TITULAR. Les nostres dades figuren a l'<a href="../avis-legal/index.html" target="_blank">avís legal</a> d'aquest web.
+    </li>
+    <li>
+        <span class="text-bold">Finalitat del tractament:</span>
+        Oferir i gestionar els nostres productes i/o serveis.
+    </li>
+    <li>
+        <span class="text-bold">Legitimació:</span>
+        Consentiment obtingut de l'interessat. Execució del contracte de serveis.
+    </li>
+    <li>
+        <span class="text-bold">Destinataris:</span>
+        Les dades no seran comunicades a tercers, llevat que ho exigeixi una llei o sigui necessari per complir amb la finalitat del tractament.
+    </li>
+    <li>
+        <span class="text-bold">Drets de les persones:</span>
+        Els interessats tenen dret a exercir els drets d'accés, rectificació, limitació de tractament, supressió, portabilitat i oposició, enviant la 
+        seva sol·licitud a la nostra l'adreça.
+    </li>
+    <li>
+        <span class="text-bold">Termini de conservació de les dades:</span>
+        Mentre es mantingui la relació comercial o durant els anys necessaris per complir amb les obligacions legals.
+    </li>
+    <li>
+        <span class="text-bold">Reclamació:</span>
+        Els interessats es poden dirigir a l'AEPD per presentar la reclamació que consideri oportuna.
+    </li>
+    <li>
+        <span class="text-bold">Informació addicional:</span>
+        Pot consultar la informació addicional i detallada a continuació a les “Qüestions sobre privacitat”.
+    </li>
+</ul>
+
+<h2 class="title3 titol text-uppercase">Qüestions sobre privacitat</h2>
+<p>
+    En compliment del Reglament (UE) 2016/679 del Parlament Europeu i del Consell, de 27 d'abril de 2016, (RGPD) i la Llei Orgànica 3/2018, de 5 de 
+    desembre, de Protecció de Dades Personals i garantia dels drets digitals (LOPDGDD), li oferim la següent informació sobre el tractament de les 
+    seves dades personals:
+</p>
+
+<h3 class="title4 titol">Qui és el responsable del tractament de les seves dades?</h3>
+<p>
+    EL TITULAR.<br>Les nostres dades figuren a l'<a href="../avis-legal/index.html" target="_blank">avís legal</a> d'aquest web.
+</p>
+
+<h3 class="title4 titol">Amb quina finalitat tractem les seves dades personals?</h3>
+<ul>
+    <li>
+        Tractem la informació que se'ns facilita per prestar i facturar els nostres serveis i productes.
+    </li>
+    <li>
+        Si ens dóna el seu consentiment també podrem tractar les seves dades per enviar-li informació sobre les nostres activitats, serveis i 
+        productes.
+    </li>
+    <li>
+        Si participa en algun dels nostres sortejos i/o concursos publicarem el seu nom i cognoms, i la seva imatge, en els diferents espais i 
+        mitjans de comunicació i difusió que utilitzem, incloses les xarxes socials, amb la finalitat de promocionar les nostres activitats, 
+        serveis i productes.
+    </li>
+</ul>
+
+<h3 class="title4 titol">Durant quant de temps conservarem les seves dades?</h3>
+<p>
+    Les dades personals proporcionades es conservaran mentre sigui usuari dels nostres serveis o en vulgui rebre informació, i si participa en una 
+    promoció mentre aquesta estigui activa, i després, durant el terminis establerts per complir amb les nostres obligacions legals.
+</p>
+
+<h3 class="title4 titol">Quina és la legitimació per al tractament de les seves dades?</h3>
+<p>
+    La base legal per als tractaments de les seves dades són els consentiments que ens dóna.
+</p>
+<p>
+    Respecte a la informació que ens sigui enviada per menors de 14 anys, s'entendrà que ho ha estat amb el consentiment dels seus representants 
+    legals. Si no és així, el representant legal del menor ens ho ha de comunicar tan aviat com en tingui coneixement.
+</p>
+
+<h3 class="title4 titol">A quins destinataris es comunicaran les seves dades?</h3>
+<p>
+    Les dades no seran comunicades a tercers, llevat que ho exigeixi una llei o sigui necessari per complir amb la finalitat del tractament.
+</p>
+
+<h3 class="title4 titol">Quins són els seus drets quan ens facilita les seves dades?</h3>
+<ul>
+    <li>
+        Qualsevol persona té dret a obtenir confirmació sobre si estem tractant o no les seves dades personals.
+    </li>
+    <li>
+        Les persones interessades tenen dret a accedir a les seves dades personals, així com a sol·licitar la rectificació de les dades inexactes o, 
+        si escau, sol·licitar la seva supressió quan, entre d'altres motius, les dades ja no siguin necessàries per a les finalitats per a les que es 
+        van recollir.
+    </li>
+    <li>
+        En determinades circumstàncies els interessats podran sol·licitar la limitació del tractament de les seves dades, en aquest cas únicament les 
+        conservarem per a l'exercici o la defensa de reclamacions.
+    </li>
+    <li>
+        També, en determinades circumstàncies i per motius relacionats amb la seva situació particular, els interessats es poden oposar al tractament 
+        de les seves dades. En aquest cas deixarem de tractar-les, excepte per motius legítims imperiosos o per a l'exercici o la defensa de possibles 
+        reclamacions.
+    </li>
+    <li>
+        Els interessats també tenen dret a la portabilitat de les seves dades.
+    </li>
+    <li>
+        Finalment, els interessats tenen dret a presentar una reclamació davant l'Autoritat de Control competent.
+    </li>
+</ul>
+
+<h3 class="title4 titol">Com pot exercir els seus drets?</h3>
+<p>
+    Enviant-nos un escrit adjuntant una còpia d'un document que l'identifiqui, a la nostra adreça física o a l'electrònica, que figuren a 
+    l'<a href="../avis-legal/index.html" target="_blank">avís legal</a> d'aquest web.
+</p>
+
+<h3 class="title4 titol">Com hem obtingut les seves dades?</h3>
+<p>
+    Les dades personals que tractem procedeixen del propi interessat, qui garanteix que les dades personals facilitades són certes i es fa responsable 
+    de comunicar-ne qualsevol modificació. Les dades que estiguin marcades amb un asterisc són obligatòries per poder donar-li el servei sol·licitat.
+</p>
+
+<h3 class="title4 titol">Quines dades tractem?</h3>
+<p>
+    Les categories de dades que podem tractar són:
+</p>
+<ul>
+    <li>
+        Dades de caràcter identificatiu.
+    </li>
+    <li>
+        Adreces postals o electròniques.
+    </li>
+    <li>
+        Altres dades sol·licitades en els nostres formularis.
+    </li>
+</ul>
+<p>
+    Les dades són limitades, atès que únicament tractem les dades necessàries per a la prestació dels nostres serveis i la gestió de la nostra 
+    activitat.
+</p>
+
+<h3 class="title4 titol">Utilitzem cookies?</h3>
+<p>
+    Utilitzem cookies durant la navegació a la nostra web amb el consentiment informat de l'usuari. L'usuari pot configurar el seu navegador perquè 
+    l'avisi de la utilització de cookies i per evitar-ne el seu ús. Per obtenir més informació visiti la nostra 
+    <a href="../politica-de-cookies/index.html" target="_blank">política de cookies</a>.
+</p>
+
+<h3 class="title4 titol">Quines mesures de seguretat apliquem?</h3>
+<p>
+    Apliquem les mesures de seguretat establertes a l'article 32 del RGPD, per tant hem adoptat les mesures de seguretat necessàries per garantir un 
+    nivell de seguretat adequat al risc del tractament de dades que realitzem, amb mecanismes que ens permeten garantir la confidencialitat, 
+    integritat, disponibilitat i resiliència permanent dels sistemes i serveis de tractament.
+</p>
+<p>
+    Algunes d'aquestes mesures són:
+</p>
+<ul>
+    <li>
+        Informació de les polítiques de tractament de dades al personal.
+    </li>
+    <li>
+        Realització de còpies de seguretat periòdiques.
+    </li>
+    <li>
+        Control d'accés a les dades.
+    </li>
+    <li>
+        Processos de verificació, avaluació i valoració regulars.
+    </li>
+</ul></div>
+                    </div>
+                
+                
+
+                
+                
+                            </div>
+        </div>
+
+            </div>
+            
+
+            </div>
+
+                    </div>
+    </div>
+
+    
+                <div id="footer">
+                        <div id="s36006">
+                <div class="container clearfix">
+                                
+<div id="b104026" class="grid-4  s-grid-12 contact">
+
+    
+                    <ul
+            class="flex-row ubicacio ubicacio-text ubicacio-block ubicacio-align-left"
+        >
+                            <li class="flex-small-12 flex-medium-12 padded-inner">
+                        
+            <div class="ubicacio-item-list">
+            <div class="ubicacio-item">
+                <div class="ubicacio-item-icon">
+                    <span class="fa fa-home"></span>
+                </div>
+                <div class="ubicacio-item-content">
+                                            <p class="ubicacio-item-line">
+                            <span class="fa fa-home"></span>
+                            C/Estació 32
+                                                            08140 Caldes de Montbui
+                                                    </p>
+                                    </div>
+            </div>
+        </div>
+    
+    <div class="ubicacio-item-list">
+        
+        
+        
+        
+        
+                    <div class="ubicacio-item">
+                <div class="ubicacio-item-icon">
+                    <span class="fa fa-envelope"></span>
+                </div>
+                <div class="ubicacio-item-content">
+                    <p class="ubicacio-item-line">
+                        <span class="fa fa-envelope"></span>
+                        <span class="mailme" >
+                            eulalia[at]eulaliavila[dot]cat
+                        </span>
+                    </p>
+                </div>
+            </div>
+        
+        
+        
+        
+                    <div class="ubicacio-item ubicacio-horari">
+                <div class="ubicacio-item-icon">
+                    <span class="fa fa-clock-o"></span>
+                </div>
+                <div class="ubicacio-item-content">
+                    <div class="ubicacio-item-line">
+                        <span class="fa fa-clock-o"></span>
+                                                                            <div><p>Hores convingudes. 9.30 a 14 i de 15 a 20. Varia segons el dia.</p></div>
+                                            </div>
+                </div>
+            </div>
+            </div>
+
+                </li>
+                    </ul>
+    </div>
+
+                <div id="b104027" class="menu grid-3  m-hidden s-hidden">
+                                    <ul>
+                            <li  >
+                    <a
+                        href="../avis-legal/index.html"
+                                            >
+                                                Avís legal
+                    </a>
+                </li>
+                            <li  class='actiu'>
+                    <a
+                        href="index.html"
+                                            >
+                                                Política de privacitat
+                    </a>
+                </li>
+                            <li  >
+                    <a
+                        href="../politica-de-cookies/index.html"
+                                            >
+                                                Política de cookies
+                    </a>
+                </li>
+                            <li  >
+                    <a
+                        href="javascript:document.dispatchEvent(new Event('cookienator:show-configurator'));"
+                                            >
+                                                Configuració de cookies
+                    </a>
+                </li>
+                            <li  >
+                    <a
+                        href="../accessibilitat/index.html"
+                                            >
+                                                Accessibilitat
+                    </a>
+                </li>
+                            <li  >
+                    <a
+                        href="../mapa-web/index.html"
+                                            >
+                                                Mapa web
+                    </a>
+                </li>
+                    </ul>
+        </div>
+
+                
+
+<div id="b104029" class="grid-5  m-center s-center s-grid-12">
+   <div class="logos-kd">
+          <ul>
+        <li class="ue">
+            <img
+                src="https://docs.gestionaweb.cat/0000/kit-digital/kd-ue-nextgeneration-color.svg"
+                                    alt="Financiat per l'Unió Europea NextGenerationEU"
+                            >
+        </li>
+        <li class="govern">
+            <img
+                src="https://docs.gestionaweb.cat/0000/kit-digital/kd-govern-color.svg"
+                                    alt="Govern d'Espanya"
+                            >
+        </li>
+        <li class="plan">
+            <img
+                src="https://docs.gestionaweb.cat/0000/kit-digital/kd-logo-plan-color.svg"
+                                    alt="Pla de Recuperació, Transformació i Resiliència"
+                            >
+        </li>
+    </ul>
+
+   </div>
+</div>
+
+                
+<div id="b104030" class="grid-2 flow-opposite s-grid-12">
+	    <a
+        href="https://www.hooba.com"
+        target="_blank"
+        title="Hooba web"
+    >
+        <span class="fc fc-hooba-logotip"></span>
+        <span class="sr-only">Hooba web</span>
+    </a>
+
+</div>
+                    </div>
+            </div>
+            </div>
+
+            </section>
+            <div class="offcanvas-overlay"></div>
+        </main>
+
+        <div class="dialog">
+            <div class="dialogContainer dialog-inner m-grid-10 s-grid-12 clearfix">
+                <div class="dialogContent padded-inner ">
+                    <div class="dialogContentText"></div>
+                    <div class="dialogBottom"><button class="close btn">D'acord</button></div>
+                </div>
+            </div>
+        </div>
+
+        <button
+    type="button"
+    class="button-cookies button-cookies--position-bottom-left"
+    title="Configuració de cookies"
+>
+    <span class="fc fc-cookie"></span>
+</button>
+<style>.button-cookies{color:#FFF;background-color:#000;border:1px solid #}</style>
+
+        <script>
+            var validate_messages = {
+                required: "Aquest camp és obligatori.",
+                email: "Si et plau, escriu un correu electrònic vàlid.",
+                number: "Si us plau, escriu un número valid",
+                equalTo: "Si us plau, escriu el mateix valor de nou.",
+                notEqualTo: "Si us plau, escriu un valor diferent.",
+                minlength: "Si us plau, no escriguis menys de {0} caràcters.",
+                password: "La contrasenya ha de tenir:<br>- entre 12 i 20 caràcters.<br>- com a mínim una majúscula.<br>- com a mínim una minúscula.<br>- com a mínim un número.<br>- com a mínim un caràcter especial: !@#$%^&*(){}[]_-.,;:+=<>'\"/|~`?€£¥.",
+                maxsize: "El fitxer supera la mida màxima de {0}.",
+                formmaxsize: "El conjunt de fitxers del formulari superen la mida màxima de {0}.",
+            };
+        </script>
+
+        <script src="../../web/bundle/main.min.js%3Fv=1772022451"></script>
+
+        
+        
+                            </body>
+</html>
